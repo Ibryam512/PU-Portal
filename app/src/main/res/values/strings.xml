@@ -3,4 +3,5 @@
     <string name="title_news" translatable="false">Новини</string>
     <string name="title_grades" translatable="false">Оценки</string>
     <string name="title_profile">Профил</string>
+    <string name="title_activity_settings">Настройки</string>
 </resources>

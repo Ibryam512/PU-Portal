@@ -1,16 +1,23 @@
 package com.example.puportal.ui.profile;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
+import com.example.puportal.MainActivity;
+import com.example.puportal.R;
+import com.example.puportal.SettingsActivity;
 import com.example.puportal.databinding.FragmentProfileBinding;
+
+import java.util.Objects;
 
 public class ProfileFragment extends Fragment {
 
@@ -24,8 +31,13 @@ public class ProfileFragment extends Fragment {
         binding = FragmentProfileBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textNotifications;
-        profileViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+        ImageButton settingsButton = root.findViewById(R.id.imageButtonSettings);
+
+        settingsButton.setOnClickListener(v -> {
+            startActivity(new Intent(getActivity(), SettingsActivity.class));
+            requireActivity().overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
+        });
+
         return root;
     }
 

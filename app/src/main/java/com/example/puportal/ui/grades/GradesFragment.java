@@ -24,8 +24,6 @@ public class GradesFragment extends Fragment {
         binding = FragmentGradesBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textDashboard;
-        gradesViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }
 
