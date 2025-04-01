@@ -40,6 +40,10 @@ public class GradesFragment extends Fragment {
         cards.add(root.findViewById(R.id.cardGrade4));
         cards.add(root.findViewById(R.id.cardGrade5));
         cards.add(root.findViewById(R.id.cardGrade6));
+        cards.add(root.findViewById(R.id.cardGrade7));
+        cards.add(root.findViewById(R.id.cardGrade8));
+        cards.add(root.findViewById(R.id.cardGrade9));
+        cards.add(root.findViewById(R.id.cardGrade10));
 
         expandableCards.add(root.findViewById(R.id.expandableCard1));
         expandableCards.add(root.findViewById(R.id.expandableCard2));
@@ -47,6 +51,11 @@ public class GradesFragment extends Fragment {
         expandableCards.add(root.findViewById(R.id.expandableCard4));
         expandableCards.add(root.findViewById(R.id.expandableCard5));
         expandableCards.add(root.findViewById(R.id.expandableCard6));
+        expandableCards.add(root.findViewById(R.id.expandableCard7));
+        expandableCards.add(root.findViewById(R.id.expandableCard8));
+        expandableCards.add(root.findViewById(R.id.expandableCard9));
+        expandableCards.add(root.findViewById(R.id.expandableCard10));
+
 
         for (int i = 0; i < cards.size(); i++) {
             int finalI = i;
